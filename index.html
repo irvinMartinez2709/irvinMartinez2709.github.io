@@ -154,43 +154,38 @@
         .project-card {
             background: white;
             border-radius: 8px;
-            overflow: hidden;
+            padding: 25px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
         
         .project-card:hover {
             transform: translateY(-10px);
         }
         
-        .project-img {
-            width: 100%;
-            height: 200px;
-            background: #ddd;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #777;
-        }
-        
-        .project-content {
-            padding: 20px;
-        }
-        
         .project-content h3 {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             color: var(--primary-color);
+            font-size: 1.4rem;
+        }
+        
+        .project-content p {
+            margin-bottom: 20px;
+            flex-grow: 1;
         }
         
         .project-links {
-            margin-top: 15px;
+            margin-top: auto;
         }
         
         .project-links a {
             display: inline-block;
             background: var(--secondary-color);
             color: white;
-            padding: 8px 15px;
+            padding: 10px 20px;
             border-radius: 4px;
             text-decoration: none;
             font-weight: bold;
@@ -272,7 +267,6 @@
             <h2>Sobre mí</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <!-- EDITAR: Información personal -->
                     <p>Hola, soy Irvin, estudiante de programación en la UTP con gran interés en el desarrollo web y de software.</p>
                     <p>En este portafolio encontrarás los trabajos que he desarrollado durante este curso, aplicando diferentes conceptos de programación como condicionales, bucles, conexión a base de datos MySQL y más.</p>
                     <p>Mi objetivo es seguir aprendiendo y mejorando mis habilidades para convertirme en un desarrollador profesional.</p>
@@ -288,15 +282,10 @@
             <div class="projects-grid">
                 <!-- Taller 1 -->
                 <div class="project-card">
-                    <div class="project-img">
-                        Taller 1
-                    </div>
                     <div class="project-content">
-                        <!-- EDITAR: Título y descripción del taller -->
-                        <h3>Taller práctico 1 </h3>
+                        <h3>Taller práctico 1</h3>
                         <p>Primer taller enfocado en la creación de una interfaz con Java Frame y la instalación y conexión remota de una máquina virtual.</p>
                         <div class="project-links">
-                            <!-- EDITAR: Enlace al taller -->
                             <a href="https://github.com/irvinMartinez2709/irvinMartinez2709.github.io/tree/main/assets/tallerPractico1" target="_blank">Revisar</a>
                         </div>
                     </div>
@@ -304,15 +293,10 @@
                 
                 <!-- Taller 2 -->
                 <div class="project-card">
-                    <div class="project-img">
-                        Taller 2
-                    </div>
                     <div class="project-content">
-                        <!-- EDITAR: Título y descripción del taller -->
                         <h3>Taller práctico 3</h3>
                         <p>Tercer taller enfocado en la creación de una interfaz y conexión a base de datos MySQL.</p>
                         <div class="project-links">
-                            <!-- EDITAR: Enlace al taller -->
                             <a href="https://github.com/irvinMartinez2709/irvinMartinez2709.github.io/tree/main/assets/tallerPractico3" target="_blank">Revisar</a>
                         </div>
                     </div>
@@ -320,15 +304,10 @@
                 
                 <!-- Taller 3 -->
                 <div class="project-card">
-                    <div class="project-img">
-                        Taller 3
-                    </div>
                     <div class="project-content">
-                        <!-- EDITAR: Título y descripción del taller -->
                         <h3>Investigación 1</h3>
                         <p>Primer investigación enfocada en el desarrollo de preguntas relacionadas a la construcción de una clase en JAVA.</p>
                         <div class="project-links">
-                            <!-- EDITAR: Enlace al taller -->
                             <a href="https://github.com/irvinMartinez2709/irvinMartinez2709.github.io/blob/main/assets/Investigación%201%20-%20Irvin%20Martínez.pdf" target="_blank">Revisar</a>
                         </div>
                     </div>
@@ -336,15 +315,10 @@
                 
                 <!-- Taller 4 -->
                 <div class="project-card">
-                    <div class="project-img">
-                        Taller 4
-                    </div>
                     <div class="project-content">
-                        <!-- EDITAR: Título y descripción del taller -->
                         <h3>Investigación 2</h3>
                         <p>Investigación enfocada en el análisis FODA de los IDE NetBeans y Eclipse.</p>
                         <div class="project-links">
-                            <!-- EDITAR: Enlace al taller -->
                             <a href="https://github.com/irvinMartinez2709/irvinMartinez2709.github.io/tree/main/assets/investigacion2" target="_blank">Revisar</a>
                         </div>
                     </div>
@@ -360,15 +334,10 @@
             <div class="projects-grid">
                 <!-- Laboratorio 1 -->
                 <div class="project-card">
-                    <div class="project-img">
-                        Laboratorio 1
-                    </div>
                     <div class="project-content">
-                        <!-- EDITAR: Título y descripción del laboratorio -->
                         <h3>Laboratorio práctico 1</h3>
                         <p>Primer laboratorio práctico aplicado a la configuración del entorno Windows (CMD)-JAVA y programación.</p>
                         <div class="project-links">
-                            <!-- EDITAR: Enlace al laboratorio -->
                             <a href="https://github.com/irvinMartinez2709/irvinMartinez2709.github.io/blob/main/assets/Laboratorio%20Práctico%201%20-%20Irvin%20Martínez.pdf" target="_blank">Revisar</a>
                         </div>
                     </div>
@@ -376,15 +345,10 @@
                 
                 <!-- Laboratorio 2 -->
                 <div class="project-card">
-                    <div class="project-img">
-                        Laboratorio 2
-                    </div>
                     <div class="project-content">
-                        <!-- EDITAR: Título y descripción del laboratorio -->
                         <h3>Laboratorio práctico 2</h3>
                         <p>Segundo laboratorio con ejercicios más complejos y aplicaciones prácticas.</p>
                         <div class="project-links">
-                            <!-- EDITAR: Enlace al laboratorio -->
                             <a href="https://github.com/irvinMartinez2709/irvinMartinez2709.github.io/tree/main/assets/laboratorioPractico2" target="_blank">Revisar</a>
                         </div>
                     </div>
@@ -400,15 +364,10 @@
             <div class="projects-grid">
                 <!-- Parcial 1 -->
                 <div class="project-card">
-                    <div class="project-img">
-                        🧠
-                    </div>
                     <div class="project-content">
-                        <!-- EDITAR: Título y descripción del parcial -->
                         <h3>Parcial 1</h3>
                         <p>Primer examen parcial que evalúa los conocimientos adquiridos en el curso.</p>
                         <div class="project-links">
-                            <!-- EDITAR: Enlace al parcial -->
                             <a href="https://github.com/irvinMartinez2709/irvinMartinez2709.github.io/tree/main/assets/examenParcial1" target="_blank">Revisar</a>
                         </div>
                     </div>
@@ -416,15 +375,10 @@
                 
                 <!-- Parcial 2 -->
                 <div class="project-card">
-                    <div class="project-img">
-                        Parcial 2
-                    </div>
                     <div class="project-content">
-                        <!-- EDITAR: Título y descripción del parcial -->
                         <h3>Parcial 2</h3>
                         <p>Segundo examen parcial enfocado en la creación de una interfaz JFrame conectada a una base de datos MySQL con operaciones CRUD.</p>
                         <div class="project-links">
-                            <!-- EDITAR: Enlace al parcial -->
                             <a href="https://github.com/irvinMartinez2709/irvinMartinez2709.github.io/tree/main/assets/examenParcial2" target="_blank">Revisar</a>
                         </div>
                     </div>
@@ -432,15 +386,10 @@
                 
                 <!-- Parcial 3 -->
                 <div class="project-card">
-                    <div class="project-img">
-                        Parcial 3
-                    </div>
                     <div class="project-content">
-                        <!-- EDITAR: Título y descripción del parcial -->
                         <h3>Ejercicio práctico 1</h3>
                         <p>Primer ejercicio práctico que evalúa los conceptos obtenidos en el curso.</p>
                         <div class="project-links">
-                            <!-- EDITAR: Enlace al parcial -->
                             <a href="https://github.com/irvinMartinez2709/irvinMartinez2709.github.io/blob/main/assets/Ejercicio%20práctico%201.pdf" target="_blank">Revisar</a>
                         </div>
                     </div>
@@ -456,11 +405,7 @@
             <div class="projects-grid">
                 <!-- Examen -->
                 <div class="project-card">
-                    <div class="project-img">
-                        Examen Final
-                    </div>
                     <div class="project-content">
-                        <!-- EDITAR: Título y descripción del examen -->
                         <h3>Examen Final/Proyecto</h3>
                         <p>Examen final que evalúa todos los conceptos aprendidos durante el curso, al crear un juego y conectarlo a una base de datos.</p>
                         <div class="project-links">
@@ -479,7 +424,6 @@
             <h2>Contacto</h2>
             <div class="contact-info">
                 <p>¿Tienes alguna pregunta o quieres más información sobre mis trabajos?</p>
-                <!-- EDITAR: Información de contacto -->
                 <p>Correo: <a href="mailto:irvin.martinez.pitti@gmail.com">irvin.martinez.pitti@gmail.com</a></p>
                 <p>GitHub: <a href="https://github.com/irvinMartinez2709" target="_blank">github.com/irvinMartinez2709</a></p>
             </div>
